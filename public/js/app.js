@@ -37568,6 +37568,523 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-8 col-sm-offset-2" }, [
+            _c("div", { staticClass: "wizard-container" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "card wizard-card",
+                  attrs: { "data-color": "red", id: "wizard" }
+                },
+                [
+                  _c("form", { attrs: { action: "", method: "" } }, [
+                    _c("div", { staticClass: "wizard-header" }, [
+                      _c("h3", { staticClass: "wizard-title" }, [
+                        _vm._v(
+                          "\n\t\t                        \t\tBook a Room\n\t\t                        \t"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("h5", [
+                        _vm._v(
+                          "This information will let us know more about you."
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "wizard-navigation" }, [
+                      _c("ul", [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              attrs: { href: "#details", "data-toggle": "tab" }
+                            },
+                            [_vm._v("Account")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              attrs: { href: "#captain", "data-toggle": "tab" }
+                            },
+                            [_vm._v("Room Type")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href: "#description",
+                                "data-toggle": "tab"
+                              }
+                            },
+                            [_vm._v("Extra Details")]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tab-content" }, [
+                      _c(
+                        "div",
+                        { staticClass: "tab-pane", attrs: { id: "details" } },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-sm-12" }, [
+                              _c("h4", { staticClass: "info-text" }, [
+                                _vm._v(" Let's start with the basic details.")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c("div", { staticClass: "input-group" }, [
+                                _c(
+                                  "span",
+                                  { staticClass: "input-group-addon" },
+                                  [
+                                    _c("i", { staticClass: "material-icons" }, [
+                                      _vm._v("email")
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group label-floating" },
+                                  [
+                                    _c(
+                                      "label",
+                                      { staticClass: "control-label" },
+                                      [_vm._v("Your Email")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: { name: "name", type: "text" }
+                                    })
+                                  ]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "input-group" }, [
+                                _c(
+                                  "span",
+                                  { staticClass: "input-group-addon" },
+                                  [
+                                    _c("i", { staticClass: "material-icons" }, [
+                                      _vm._v("lock_outline")
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group label-floating" },
+                                  [
+                                    _c(
+                                      "label",
+                                      { staticClass: "control-label" },
+                                      [_vm._v("Your Password")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: { name: "name2", type: "password" }
+                                    })
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-6" }, [
+                              _c(
+                                "div",
+                                { staticClass: "form-group label-floating" },
+                                [
+                                  _c(
+                                    "label",
+                                    { staticClass: "control-label" },
+                                    [_vm._v("Country")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "select",
+                                    { staticClass: "form-control" },
+                                    [
+                                      _c("option", {
+                                        attrs: { disabled: "", selected: "" }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Afghanistan" } },
+                                        [_vm._v(" Afghanistan ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Albania" } },
+                                        [_vm._v(" Albania ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Algeria" } },
+                                        [_vm._v(" Algeria ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "American Samoa" } },
+                                        [_vm._v(" American Samoa ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Andorra" } },
+                                        [_vm._v(" Andorra ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Angola" } },
+                                        [_vm._v(" Angola ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Anguilla" } },
+                                        [_vm._v(" Anguilla ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Antarctica" } },
+                                        [_vm._v(" Antarctica ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "..." } },
+                                        [_vm._v("...")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "form-group label-floating" },
+                                [
+                                  _c(
+                                    "label",
+                                    { staticClass: "control-label" },
+                                    [_vm._v("Daily Budget")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "select",
+                                    { staticClass: "form-control" },
+                                    [
+                                      _c("option", {
+                                        attrs: { disabled: "", selected: "" }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Afghanistan" } },
+                                        [_vm._v(" $100 ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Albania" } },
+                                        [_vm._v(" $100 - $499 ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "Algeria" } },
+                                        [_vm._v(" $499 - $999 ")]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "option",
+                                        { attrs: { value: "American Samoa" } },
+                                        [_vm._v(" $999+ ")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "tab-pane", attrs: { id: "captain" } },
+                        [
+                          _c("h4", { staticClass: "info-text" }, [
+                            _vm._v("What type of room would you want? ")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              { staticClass: "col-sm-10 col-sm-offset-1" },
+                              [
+                                _c("div", { staticClass: "col-sm-4" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "choice",
+                                      attrs: {
+                                        "data-toggle": "wizard-radio",
+                                        rel: "tooltip",
+                                        title:
+                                          "This is good if you travel alone."
+                                      }
+                                    },
+                                    [
+                                      _c("input", {
+                                        attrs: {
+                                          type: "radio",
+                                          name: "job",
+                                          value: "Design"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "icon" }, [
+                                        _c(
+                                          "i",
+                                          { staticClass: "material-icons" },
+                                          [_vm._v("weekend")]
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("h6", [_vm._v("Single")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-sm-4" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "choice",
+                                      attrs: {
+                                        "data-toggle": "wizard-radio",
+                                        rel: "tooltip",
+                                        title:
+                                          "Select this room if you're traveling with your family."
+                                      }
+                                    },
+                                    [
+                                      _c("input", {
+                                        attrs: {
+                                          type: "radio",
+                                          name: "job",
+                                          value: "Code"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "icon" }, [
+                                        _c(
+                                          "i",
+                                          { staticClass: "material-icons" },
+                                          [_vm._v("home")]
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("h6", [_vm._v("Family")])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "col-sm-4" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "choice",
+                                      attrs: {
+                                        "data-toggle": "wizard-radio",
+                                        rel: "tooltip",
+                                        title:
+                                          "Select this option if you are coming with your team."
+                                      }
+                                    },
+                                    [
+                                      _c("input", {
+                                        attrs: {
+                                          type: "radio",
+                                          name: "job",
+                                          value: "Code"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "icon" }, [
+                                        _c(
+                                          "i",
+                                          { staticClass: "material-icons" },
+                                          [_vm._v("business")]
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("h6", [_vm._v("Business")])
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "tab-pane",
+                          attrs: { id: "description" }
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("h4", { staticClass: "info-text" }, [
+                              _vm._v(" Drop us a small description.")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "col-sm-6 col-sm-offset-1" },
+                              [
+                                _c("div", { staticClass: "form-group" }, [
+                                  _c("label", [_vm._v("Room description")]),
+                                  _vm._v(" "),
+                                  _c("textarea", {
+                                    staticClass: "form-control",
+                                    attrs: { placeholder: "", rows: "6" }
+                                  })
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "col-sm-4" }, [
+                              _c("div", { staticClass: "form-group" }, [
+                                _c("label", { staticClass: "control-label" }, [
+                                  _vm._v("Example")
+                                ]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "description" }, [
+                                  _vm._v(
+                                    '"The room really nice name is recognized as being a really awesome room. We use it every sunday when we go fishing and we catch a lot. It has some kind of magic shield around it."'
+                                  )
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "wizard-footer" }, [
+                      _c("div", { staticClass: "pull-right" }, [
+                        _c("input", {
+                          staticClass:
+                            "btn btn-next btn-fill btn-danger btn-wd",
+                          attrs: { type: "button", name: "next", value: "Next" }
+                        }),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass:
+                            "btn btn-finish btn-fill btn-danger btn-wd",
+                          attrs: {
+                            type: "button",
+                            name: "finish",
+                            value: "Finish"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "pull-left" }, [
+                        _c("input", {
+                          staticClass:
+                            "btn btn-previous btn-fill btn-default btn-wd",
+                          attrs: {
+                            type: "button",
+                            name: "previous",
+                            value: "Previous"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "footer-checkbox" }, [
+                          _c("div", { staticClass: "col-sm-12" }, [
+                            _c("div", { staticClass: "checkbox" }, [
+                              _c("label", [
+                                _c("input", {
+                                  attrs: {
+                                    type: "checkbox",
+                                    name: "optionsCheckboxes"
+                                  }
+                                })
+                              ]),
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\t  Subscribe to our newsletter\n\t\t\t\t\t\t\t\t\t\t\t  "
+                              )
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "clearfix" })
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -49777,6 +50294,40 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js sync recursive \\.vue$/":
+/*!***********************************!*\
+  !*** ./resources/js sync \.vue$/ ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./components/BookingForm.vue": "./resources/js/components/BookingForm.vue",
+	"./components/ExampleComponent.vue": "./resources/js/components/ExampleComponent.vue"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js sync recursive \\.vue$/";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -49799,10 +50350,13 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+var files = __webpack_require__("./resources/js sync recursive \\.vue$/");
+
+files.keys().map(function (key) {
+  return Vue.component(key.split('/').pop().split('.')[0], files(key)["default"]);
+}); // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49857,6 +50411,59 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/BookingForm.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/BookingForm.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BookingForm.vue?vue&type=template&id=9a61edbc& */ "./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/BookingForm.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./BookingForm.vue?vue&type=template&id=9a61edbc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BookingForm.vue?vue&type=template&id=9a61edbc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BookingForm_vue_vue_type_template_id_9a61edbc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
