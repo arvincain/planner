@@ -16,14 +16,14 @@
 
 		                    	<div class="wizard-header">
 		                        	<h3 class="wizard-title">
-		                        		Book a Room
+		                        		Plan an event
 		                        	</h3>
-									<h5>This information will let us know more about you.</h5>
+									<h5>These information will let us know what you need.</h5>
 		                    	</div>
 								<div class="wizard-navigation">
 									<ul>
 			                            <li><a href="#details" data-toggle="tab">Account</a></li>
-			                            <li><a href="#captain" data-toggle="tab">Room Type</a></li>
+			                            <li><a href="#captain" data-toggle="tab">Event Type</a></li>
 			                            <li><a href="#description" data-toggle="tab">Extra Details</a></li>
 			                        </ul>
 								</div>
@@ -47,11 +47,11 @@
 
 												<div class="input-group">
 													<span class="input-group-addon">
-														<i class="material-icons">lock_outline</i>
+														<i class="material-icons">groups</i>
 													</span>
 													<div class="form-group label-floating">
-			                                          	<label class="control-label">Your Password</label>
-			                                          	<input name="name2" type="password" class="form-control">
+			                                          	<label class="control-label">No. of guests</label>
+			                                          	<input name="name2" type="number" class="form-control">
 			                                        </div>
 												</div>
 
@@ -69,11 +69,14 @@
 	                                                	<option value="Angola"> Angola </option>
 	                                                	<option value="Anguilla"> Anguilla </option>
 	                                                	<option value="Antarctica"> Antarctica </option>
-	                                                	<option value="...">...</option>
 		                                        	</select>
 		                                    	</div>
+                                                <!-- <span class="input-group-addon">
+														<i class="material-icons">payments</i>
+													</span> -->
 												<div class="form-group label-floating">
-		                                        	<label class="control-label">Daily Budget</label>
+		                                        	<label class="control-label">Budget</label>
+
 	                                        		<select class="form-control">
 														<option disabled="" selected=""></option>
 	                                                	<option value="Afghanistan"> $100 </option>
@@ -95,16 +98,16 @@
 		                                                <div class="icon">
 		                                                    <i class="material-icons">weekend</i>
 		                                                </div>
-		                                                <h6>Single</h6>
+		                                                <h6>Baptism</h6>
 		                                            </div>
 		                                        </div>
 		                                        <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this room if you're traveling with your family.">
 		                                                <input type="radio" name="job" value="Code">
 		                                                <div class="icon">
-		                                                    <i class="material-icons">home</i>
+		                                                    <i class="material-icons">cake</i>
 		                                                </div>
-		                                                <h6>Family</h6>
+		                                                <h6>Birthday</h6>
 		                                            </div>
 		                                        </div>
 												<div class="col-sm-4">
@@ -113,7 +116,7 @@
 		                                                <div class="icon">
 		                                                    <i class="material-icons">business</i>
 		                                                </div>
-		                                                <h6>Business</h6>
+		                                                <h6>Wedding</h6>
 		                                            </div>
 		                                        </div>
 		                                    </div>

@@ -37606,13 +37606,13 @@ var staticRenderFns = [
                     _c("div", { staticClass: "wizard-header" }, [
                       _c("h3", { staticClass: "wizard-title" }, [
                         _vm._v(
-                          "\n\t\t                        \t\tBook a Room\n\t\t                        \t"
+                          "\n\t\t                        \t\tPlan an event\n\t\t                        \t"
                         )
                       ]),
                       _vm._v(" "),
                       _c("h5", [
                         _vm._v(
-                          "This information will let us know more about you."
+                          "These information will let us know what you need."
                         )
                       ])
                     ]),
@@ -37635,7 +37635,7 @@ var staticRenderFns = [
                             {
                               attrs: { href: "#captain", "data-toggle": "tab" }
                             },
-                            [_vm._v("Room Type")]
+                            [_vm._v("Event Type")]
                           )
                         ]),
                         _vm._v(" "),
@@ -37702,7 +37702,7 @@ var staticRenderFns = [
                                   { staticClass: "input-group-addon" },
                                   [
                                     _c("i", { staticClass: "material-icons" }, [
-                                      _vm._v("lock_outline")
+                                      _vm._v("groups")
                                     ])
                                   ]
                                 ),
@@ -37714,12 +37714,12 @@ var staticRenderFns = [
                                     _c(
                                       "label",
                                       { staticClass: "control-label" },
-                                      [_vm._v("Your Password")]
+                                      [_vm._v("No. of guests")]
                                     ),
                                     _vm._v(" "),
                                     _c("input", {
                                       staticClass: "form-control",
-                                      attrs: { name: "name2", type: "password" }
+                                      attrs: { name: "name2", type: "number" }
                                     })
                                   ]
                                 )
@@ -37791,12 +37791,6 @@ var staticRenderFns = [
                                         "option",
                                         { attrs: { value: "Antarctica" } },
                                         [_vm._v(" Antarctica ")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "option",
-                                        { attrs: { value: "..." } },
-                                        [_vm._v("...")]
                                       )
                                     ]
                                   )
@@ -37810,7 +37804,7 @@ var staticRenderFns = [
                                   _c(
                                     "label",
                                     { staticClass: "control-label" },
-                                    [_vm._v("Daily Budget")]
+                                    [_vm._v("Budget")]
                                   ),
                                   _vm._v(" "),
                                   _c(
@@ -37895,7 +37889,7 @@ var staticRenderFns = [
                                         )
                                       ]),
                                       _vm._v(" "),
-                                      _c("h6", [_vm._v("Single")])
+                                      _c("h6", [_vm._v("Baptism")])
                                     ]
                                   )
                                 ]),
@@ -37925,11 +37919,11 @@ var staticRenderFns = [
                                         _c(
                                           "i",
                                           { staticClass: "material-icons" },
-                                          [_vm._v("home")]
+                                          [_vm._v("cake")]
                                         )
                                       ]),
                                       _vm._v(" "),
-                                      _c("h6", [_vm._v("Family")])
+                                      _c("h6", [_vm._v("Birthday")])
                                     ]
                                   )
                                 ]),
@@ -37963,7 +37957,7 @@ var staticRenderFns = [
                                         )
                                       ]),
                                       _vm._v(" "),
-                                      _c("h6", [_vm._v("Business")])
+                                      _c("h6", [_vm._v("Wedding")])
                                     ]
                                   )
                                 ])
