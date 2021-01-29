@@ -40,7 +40,7 @@
 														<i class="material-icons">email</i>
 													</span>
 													<div class="form-group label-floating">
-			                                          	<label class="control-label">Your Email</label>
+			                                          	<label class="control-label">Type of Event</label>
 			                                          	<input name="name" type="text" class="form-control">
 			                                        </div>
 												</div>
@@ -52,13 +52,14 @@
 													<div class="form-group label-floating">
 			                                          	<label class="control-label">No. of guests</label>
 			                                          	<input name="name2" type="number" class="form-control">
+														  <!-- <date-picker v-model="data.date" :disabled-date="disabledBeforeTodayAndAfterAWeek" :default-value="new Date()" valueType="format"></date-picker> -->
 			                                        </div>
 												</div>
 
 		                                	</div>
 		                                	<div class="col-sm-6">
 		                                    	<div class="form-group label-floating">
-		                                        	<label class="control-label">Country</label>
+		                                        	<label class="control-label">Venue</label>
 	                                        		<select class="form-control">
 														<option disabled="" selected=""></option>
 	                                                	<option value="Afghanistan"> Afghanistan </option>
@@ -167,25 +168,34 @@
 		        </div>
 	    	</div> <!-- row -->
 		</div> <!--  big container -->
-
-{{name}}
 	</div>
 </template>
 <script>
+  import DatePicker from 'vue2-datepicker';
+  import 'vue2-datepicker/index.css';
 export default {
+	   components: { DatePicker },
 	data(){
 		return {
-			name:"HI",
+			data:{
+				name:"HI",
+				date:null
+			},
 		}
 	},
 
 	mounted(){
 		this.getName()
+		console.log(this.data)
 	},
 	methods:{
 		getName:function(){
 			// axios.post("")
-		}
+		},
+		disabledBeforeTodayAndAfterAWeek(date) {
+                const today = new Date();
+                return date < today;
+            },
 
 	}
 }
