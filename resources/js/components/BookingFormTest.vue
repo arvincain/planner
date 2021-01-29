@@ -30,8 +30,12 @@
 								</div>
 
 		                        <div class="tab-content">
-                                    <div class="tab-pane" id="services">
-										
+                                    <div class="tab-pane" id="services" >
+										<span  v-for="(service) in services" :key="service.id">
+											<label class="checkbox-inline">
+												<input type="checkbox" v-model="selected" :value="service.service_name" number>{{service.service_name}}
+											</label>
+										</span>
                                     </div>
 		                            <div class="tab-pane" id="details">
 		                            	<div class="row">
@@ -181,16 +185,21 @@ export default {
 	data(){
 		return {
 			name:"HI",
+			selected: [],
+			services:{},
 		}
 	},
 
 	mounted(){
-		this.getName()
+		this.getServices()
 	},
 	methods:{
-		getName:function(){
-			// axios.post("")
-		}
+		getServices:function(){
+			axios.get('/getServices').then(function(response){
+                this.services = response.data
+                console.log(response.data)
+            }.bind(this));
+		},
 
 	}
 }
