@@ -168,6 +168,25 @@
 	    	</div> <!-- row -->
 		</div> <!--  big container -->
 
-
+{{name}}
 	</div>
 </template>
+<script>
+export default {
+	data(){
+		return {
+			name:"HI",
+		}
+	},
+
+	mounted(){
+		this.getName()
+	},
+	methods:{
+		getName:function(){
+			// axios.post("")
+		}
+
+	}
+}
+</script>
