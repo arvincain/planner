@@ -179,7 +179,8 @@ export default {
 		return {
 			data:{
 				name:"HI",
-				date:null
+				date:null,
+				test:''
 			},
 		}
 	},
