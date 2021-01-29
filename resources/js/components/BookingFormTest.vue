@@ -30,85 +30,12 @@
 								</div>
 
 		                        <div class="tab-content">
-                                    <div class="tab-pane" id="services">
-                                        <div class="row">
-                                            <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1">
-  <label class="custom-control-label" for="customCheck1">Event Planner</label>
-</div>
-
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck2">
-  <label class="custom-control-label" for="customCheck2">Event Coordinator</label>
-</div>
-
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck3">
-  <label class="custom-control-label" for="customCheck3">Event Host/Emcee</label>
-</div>
-
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck4">
-  <label class="custom-control-label" for="customCheck4">Event Venues</label>
-</div>
-
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck5">
-  <label class="custom-control-label" for="customCheck5">Caterer</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck6">
-  <label class="custom-control-label" for="customCheck6">Cake</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck7">
-  <label class="custom-control-label" for="customCheck7">Souvenirs/Giveaways</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck8">
-  <label class="custom-control-label" for="customCheck8">Invitations</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck9">
-  <label class="custom-control-label" for="customCheck9">Photographer</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck10">
-  <label class="custom-control-label" for="customCheck10">Videographer</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck11">
-  <label class="custom-control-label" for="customCheck11">Lights and Sound System</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck12">
-  <label class="custom-control-label" for="customCheck12">Children’s Party Needs</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck13">
-  <label class="custom-control-label" for="customCheck13">Clown/Mascot</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck14">
-  <label class="custom-control-label" for="customCheck14">Wedding Stylist</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck15">
-  <label class="custom-control-label" for="customCheck15">Musicians/Singers</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck16">
-  <label class="custom-control-label" for="customCheck16">Wine</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck17">
-  <label class="custom-control-label" for="customCheck17">Florist</label>
-</div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                                            </div>
-                                        </div>
+                                    <div class="tab-pane" id="services" >
+										<span  v-for="(service) in services" :key="service.id">
+											<label class="checkbox-inline">
+												<input type="checkbox" v-model="selected" :value="service.service_name" number>{{service.service_name}}
+											</label>
+										</span>
                                     </div>
 		                            <div class="tab-pane" id="details">
 		                            	<div class="row">
@@ -258,16 +185,21 @@ export default {
 	data(){
 		return {
 			name:"HI",
+			selected: [],
+			services:{},
 		}
 	},
 
 	mounted(){
-		this.getName()
+		this.getServices()
 	},
 	methods:{
-		getName:function(){
-			// axios.post("")
-		}
+		getServices:function(){
+			axios.get('/getServices').then(function(response){
+                this.services = response.data
+                console.log(response.data)
+            }.bind(this));
+		},
 
 	}
 }
