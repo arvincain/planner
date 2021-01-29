@@ -20,5 +20,6 @@
         </div>
     </div>
 </div> -->
-<booking-form></booking-form>
+<!-- <booking-form></booking-form> -->
+<booking-form-test></booking-form-test>
 @endsection
