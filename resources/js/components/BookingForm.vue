@@ -52,7 +52,7 @@
 													<div class="form-group label-floating">
 			                                          	<label class="control-label">No. of guests</label>
 			                                          	<input name="name2" type="number" class="form-control">
-														  <!-- <date-picker v-model="data.date" :disabled-date="disabledBeforeTodayAndAfterAWeek" :default-value="new Date()" valueType="format"></date-picker> -->
+														  <date-picker v-model="data.date" :disabled-date="disabledBeforeTodayAndAfterAWeek" :default-value="new Date()" valueType="format"></date-picker>
 			                                        </div>
 												</div>
 
